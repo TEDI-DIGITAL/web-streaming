@@ -1,0 +1,1487 @@
+:root{
+  --bg:#080d19;
+  --card:#111827;
+  --card2:#0d1525;
+  --text:#ffffff;
+  --muted:#b8c5d6;
+  --cyan:#22d3ee;
+  --green:#25d366;
+  --border:rgba(255,255,255,.09);
+  --gold:#ffcc00;
+--gold2:#ffd633;
+  --goldDark:#b8860b;
+
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  min-height:720px;
+  width:min(92%,1400px);
+  margin:30px auto 60px;
+  border-radius:24px;
+  overflow:hidden;
+  background-image:url("assets/img/logo.png");
+  background-size:cover;
+  background-position:center;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 20px 80px rgba(0,0,0,.45);
+}
+
+.logo-principal{
+  display:none;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:linear-gradient(
+    90deg,
+    rgba(0,0,0,.82) 0%,
+    rgba(0,0,0,.58) 35%,
+    rgba(0,0,0,.18) 100%
+  );
+}
+
+.topbar{
+  position:relative;
+  z-index:2;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding:54px 34px 34px;
+}
+
+#heroWhatsapp{
+  margin-top:18px;
+}
+
+.nav-btn{
+  padding:16px 24px;
+  border-radius:12px;
+  font-size:15px;
+}
+
+.brand{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  padding:12px 18px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:rgba(0,0,0,.45);
+  font-weight:800;
+}
+
+.bear-logo{
+  font-size:30px;
+}
+
+.nav-btn,
+.primary-btn,
+.secondary-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:14px;
+  font-weight:900;
+}
+
+/* Botón "Ver servicios" */
+.primary-btn{
+  background:#ffcc00;
+  color:#111;
+  padding:18px 26px;
+  border-radius:14px;
+  font-weight:900;
+  box-shadow:0 10px 25px rgba(255,204,0,.25);
+  transition:.3s;
+}
+
+.primary-btn:hover{
+  background:#ffd633;
+  transform:translateY(-2px);
+  box-shadow:0 15px 35px rgba(255,204,0,.4);
+}
+
+/* Botón "Comunicate con un asesor" */
+.nav-btn {
+    background: linear-gradient(90deg, #25D366, #1ED760); /* verde WhatsApp */
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(37,211,102,.25);
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px #25D366, 0 0 25px #1ED760;
+}
+
+/* Icono WhatsApp */
+.nav-btn::before {
+    content: "\f232"; /* Font Awesome WhatsApp */
+    font-family: "Font Awesome 5 Brands";
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+}
+
+.secondary-btn{
+  border:1px solid var(--border);
+  padding:18px 26px;
+  background:rgba(0,0,0,.35);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+ max-width:650px;
+  padding:20px 40px 40px;
+}
+
+.hero h1{
+  font-size:clamp(42px,6vw,78px);
+  line-height:.95;
+  font-weight:900;
+  letter-spacing:-2px;
+  margin:0 0 18px;
+}
+
+.hero h1 span{
+  color:#ffcc00;
+  text-shadow:
+    0 0 12px rgba(255,204,0,.45);
+}
+.hero p{
+  font-size:22px;
+  color:#e8eef7;
+  line-height:1.35;
+}
+
+.hero-actions{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin:28px 0;
+}
+
+.features{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:34px;
+}
+
+.features div{
+  background:rgba(0,0,0,.48);
+  border:1px solid var(--border);
+  padding:18px 22px;
+  border-radius:16px;
+  font-weight:800;
+}
+
+/* LAYOUT */
+main{
+  width:min(94%,1620px);
+  margin:auto;
+}
+
+.section{
+  margin:0 0 70px;
+}
+
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center;
+  margin-bottom:22px;
+}
+
+.section-title {
+  display: flex;           /* Para alinear icono y texto */
+  align-items: center;     /* Centrar verticalmente */
+  gap: 8px;                /* Separación entre icono y texto */
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  position: relative;
+}
+*/
+
+.section-title span{
+  color:#ffcc00; /* Dorado */
+  text-shadow:
+    0 0 10px rgba(255,204,0,.7),
+    0 0 25px rgba(255,204,0,.35);
+}
+
+/* Rayita general */
+.section-title::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 90px;
+  background: #ffcc00;
+  border-radius: 999px;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+  bottom: -10px;           /* Ajusta según el tamaño del texto */
+  left: 0;                 /* Empieza desde el inicio del texto */
+}
+
+.section-title .icon {
+  font-size: 2.5rem;       /* Tamaño de la corona o reloj */
+}
+
+.section-title.icon::after {
+  left: 36px; /* desplaza para que quede debajo del icono */
+}
+
+.section-title i,
+.section-title .icon-img {
+  font-size: 2.5rem;
+}
+
+.section-title span {
+  display: inline-block;
+}
+.section h2{
+  font-size:48px;
+  font-weight:1000;
+  margin:0;
+  text-transform:uppercase;
+  line-height:1;
+  color:#fff;
+  text-shadow:0 0 15px rgba(255,255,255,.15);
+}
+
+.section h2 span{
+  color:#ffcc00;
+  text-shadow:
+    0 0 10px rgba(255,204,0,.5),
+    0 0 20px rgba(255,204,0,.25);
+}
+
+
+
+.section p{
+  color:var(--muted);
+  font-size:18px;
+}
+
+.search-wrapper{
+  position:relative;
+  width:min(100%,430px);
+  justify-self:end;
+}
+
+#searchInput{
+  width:100%;
+  padding:18px 58px 18px 22px;
+  border-radius:16px;
+  background:#090f1c;
+  color:#fff;
+  border:1px solid rgba(255,204,0,.65);
+  font-size:17px;
+  box-shadow:0 0 18px rgba(255,204,0,.18);
+}
+
+.search-icon{
+  position:absolute;
+  right:20px;
+  top:50%;
+  transform:translateY(-50%);
+  color:var(--gold);
+  font-size:22px;
+  pointer-events:none;
+}
+
+
+
+/* FILTROS */
+.filters{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:20px 0 28px;
+}
+
+.filter-btn{
+  border:1px solid rgba(255,204,0,.35);
+  background:#101827;
+  color:#d6e0ed;
+  border-radius:999px;
+  padding:13px 19px;
+  font-weight:900;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  position:relative;
+  transition:all .3s ease;
+}
+
+.filter-btn.active{
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:#111;
+  box-shadow:0 8px 22px rgba(255,204,0,.35);
+
+  color:#000000;
+text-shadow:0 0 4px rgba(0, 0, 0, 0.6), 0 0 8px rgba(255, 187, 0, 0.6);
+}
+
+.filter-btn:hover{
+  transform:translateY(-6px) scale(1.06);
+  border-color:#ffcc00;
+  color:#ffcc00;
+  box-shadow:
+    0 0 15px rgba(255,204,0,.45),
+    0 0 30px rgba(255,204,0,.22);
+}
+.filter-btn.active:hover{
+  color:#111;
+  transform:translateY(-6px) scale(1.06);
+  box-shadow:
+    0 0 18px rgba(255,204,0,.75),
+    0 0 35px rgba(255,204,0,.35);
+}
+
+/* PRODUCTOS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+}
+
+.product{
+  position:relative;
+  min-height:540px;
+  padding:28px;
+  border:1px solid rgba(255,204,0,.35);
+  border-radius:24px;
+  background:linear-gradient(135deg,rgba(255,204,0,.10),#080d16 72%);
+  overflow:hidden;
+  box-shadow:0 18px 45px rgba(0,0,0,.35);
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+}
+.product:hover{
+  transform:translateY(-12px);
+  border-color:#ffcc00;
+  box-shadow:
+    0 25px 50px rgba(0,0,0,.45),
+    0 0 25px rgba(255,204,0,.25);
+}
+.product .logo{
+  transition:all .35s ease;
+}
+
+.product:hover .logo{
+  transform:scale(1.08);
+  box-shadow:
+    0 0 18px rgba(255,204,0,.35);
+}
+
+.product:hover .tag{
+  transform:translateY(-3px) scale(1.05);
+  box-shadow:
+    0 0 20px rgba(255,204,0,.55);
+}
+
+.product:hover .price{
+  text-shadow:
+    0 0 12px rgba(255,204,0,.7),
+    0 0 24px rgba(255,204,0,.35);
+}
+
+.product:hover .buy{
+  transform:translateY(-3px);
+  box-shadow:
+    0 15px 35px rgba(255,204,0,.55);
+}
+
+.product:before{
+  content:"";
+  position:absolute;
+  right:-80px;
+  bottom:-70px;
+  width:260px;
+  height:420px;
+  background:rgba(255,255,255,.035);
+  transform:rotate(25deg);
+}
+
+.status{
+  position:absolute;
+  top:22px;
+  right:24px;
+  color:#2eff7e;
+  font-weight:900;
+}
+
+.logo{
+  width:98px;
+  height:98px;
+  border-radius:22px;
+  border:1px solid rgba(255,204,0,.25);
+  display:grid;
+  place-items:center;
+  background:rgba(255,204,0,.12);
+  font-weight:1000;
+  font-size:26px;
+  margin:20px auto 26px;
+  color:#fff;
+}
+
+.product h3{
+  font-size:30px;
+  line-height:1.05;
+  margin:0 0 12px;
+  color:#fff;
+}
+
+.price{
+  color:var(--gold);
+  font-weight:1000;
+  font-size:26px;
+  margin-bottom:18px;
+  text-shadow:0 0 12px rgba(255,204,0,.35);
+}
+
+.product p,
+.product li{
+  color:#d8e2ef;
+  font-size:17px;
+  line-height:1.45;
+}
+
+.buy{
+  position:absolute;
+  left:28px;
+  right:28px;
+  bottom:26px;
+  padding:18px;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:#111;
+  text-align:center;
+  border-radius:16px;
+  font-weight:1000;
+  font-size:18px;
+  box-shadow:0 10px 28px rgba(255,204,0,.35);
+  transition:.3s;
+}
+.buy:hover{
+  transform:translateY(-2px);
+  box-shadow:0 15px 35px rgba(255,204,0,.5);
+}
+.status, .tag{
+  color:#25ff6e; /* disponible */
+}
+
+.tag{
+  position:absolute;
+  top:10px; /* más cerca del borde superior */
+  left:10px; /* margen izquierdo */
+  z-index:10; /* encima de todo */
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:linear-gradient(135deg,rgba(255,204,0,.35),rgba(255,204,0,.15));
+  color:var(--gold);
+  border:1px solid rgba(255,204,0,.5);
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:900;
+  box-shadow:0 0 12px rgba(255,204,0,.45);
+    transition:all .35s ease;
+
+}
+.tag::before{
+  content:"👑";
+}
+/* INFO */
+.info-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:24px;
+  margin-bottom:70px;
+}
+
+.info-card {
+  position: relative !important;
+  border-radius: 24px !important;
+  padding: 34px !important;
+  background: linear-gradient(135deg, #101827, #08111f) !important;
+  
+  /* Evita que se corte la luz trasera */
+  overflow: visible !important; 
+
+  /* Borde y Brillo Base */
+  border: 1px solid rgba(255, 204, 0, 0.35) !important;
+  box-shadow: 
+    0 18px 45px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(255, 204, 0, 0.12) !important;
+
+  /* Transición suave para el efecto de encendido */
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.4s ease, 
+              box-shadow 0.4s ease !important;
+}
+
+.info-card:hover {
+  transform: translateY(-8px) !important;
+  border-color: #ffcc00 !important;
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(255, 204, 0, 0.35),                /* Brillo intenso */
+    0 0 50px rgba(255, 204, 0, 0.15) !important;     /* Expansión de luz */
+}
+
+.info-card.blue{
+  background:linear-gradient(135deg,#0d1a31,#08213a);
+}
+.info-card h2,
+.faq h2{
+  font-size:56px;
+  font-weight:1000;
+  letter-spacing:-1px;
+}
+.info-card,
+.faq{
+  border:1px solid rgba(255,204,0,.22);
+  box-shadow:0 18px 45px rgba(0,0,0,.35);
+}
+
+/* 1. EL CONTENEDOR PRINCIPAL */
+.steps {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;            
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* 2. CADA FILA DE PASO (<div>) */
+.steps div {
+  display: flex !important;
+  align-items: center !important;   
+  padding: 20px 24px !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.005)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 16px !important;
+  
+  /* CAMBIO AQUÍ: Tipografía con Negrita Fuerte */
+  font-size: 16px !important;
+  font-weight: 800 !important;      /* Letra robusta y bien marcada en negrita */
+  color: #ffffff !important;        /* Blanco puro para máxima nitidez */
+  letter-spacing: 0.3px !important; /* Un toque de espacio entre letras para que no se amontone al ser gruesa */
+  
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.4s ease, 
+              box-shadow 0.4s ease !important;
+}
+
+/* ==========================================================================
+   EFECTOS INTERACTIVOS (HOVER)
+   ========================================================================== */
+
+.steps div:hover {
+  transform: translateX(8px) !important; 
+  background: linear-gradient(135deg, rgba(255, 204, 0, 0.03), rgba(0, 0, 0, 0)) !important;
+  border-color: rgba(255, 204, 0, 0.4) !important; 
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(255, 204, 0, 0.1) !important; 
+}
+/* 3. EL NÚMERO (<span>) - Círculo Neón Perfecto */
+.steps div span {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;    
+  margin-right: 20px !important;    
+  flex-shrink: 0 !important;        
+  
+  background: linear-gradient(135deg, #ffcc00, #ff9900) !important;
+  color: #0d1117 !important;        
+  font-weight: 900 !important;
+  font-size: 15px !important;
+  
+  box-shadow: 
+    0 0 12px rgba(255, 204, 0, 0.6), 
+    0 0 25px rgba(255, 204, 0, 0.25) !important;
+  transition: background 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* ==========================================================================
+   EFECTOS INTERACTIVOS (HOVER)
+   ========================================================================== */
+
+.steps div:hover {
+  transform: translateX(8px) !important; 
+  background: linear-gradient(135deg, rgba(255, 204, 0, 0.03), rgba(0, 0, 0, 0)) !important;
+  border-color: rgba(255, 204, 0, 0.4) !important; 
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(255, 204, 0, 0.1) !important; 
+}
+
+.steps div:hover span {
+  background: linear-gradient(135deg, #ffffff, #ffcc00) !important; 
+  box-shadow: 
+    0 0 15px rgba(255, 204, 0, 0.9), 
+    0 0 30px rgba(255, 204, 0, 0.4) !important;
+}
+
+
+.line:hover{
+  transform:translateX(8px);
+  border-color:rgba(255,204,0,.38);
+  box-shadow:0 0 18px rgba(255,204,0,.12);
+}
+.warning {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  color: #ffcc00 !important;
+  padding: 18px 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,204,0,.35);
+  background: linear-gradient(135deg, rgba(255,204,0,.18), rgba(255,204,0,.05));
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.warning:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 20px rgba(255,204,0,.35), 0 0 35px rgba(255,204,0,.15);
+  border-color: #ffcc00;
+}
+
+/* FAQ */
+.faq{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:34px;
+}
+
+.faq-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.faq article{
+  background:var(--card2);
+  border-radius:16px;
+  padding:22px;
+}
+.faq article p{
+  font-size:18px;
+  line-height:1.6;
+}
+
+.faq h3{
+  font-size:28px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  color:#60718b;
+  padding:48px;
+}
+
+/* WHATSAPP */
+.whatsapp-float{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+    z-index: 9999;
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.whatsapp-float:hover i {
+    text-shadow: 0 0 10px #25D366, 0 0 20px #1ED760;
+}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .info-grid{
+    grid-template-columns:1fr;
+  }
+
+  .section-head{
+    align-items:stretch;
+    flex-direction:column;
+  }
+}
+
+@media(max-width:620px){
+  .hero{
+    min-height:auto;
+    width:100%;
+    margin:0 0 36px;
+    border-radius:0;
+  }
+
+  .topbar{
+    padding:28px 18px 18px;
+    align-items:flex-start;
+  }
+
+  .nav-btn{
+    display:none;
+  }
+
+.hero-content{
+  padding:120px 40px 40px;
+}
+
+  .hero p{
+    font-size:18px;
+  }
+
+  .features div{
+    width:100%;
+  }
+
+  .grid,
+  .faq-grid{
+    grid-template-columns:1fr;
+  }
+
+  .product{
+  min-height:540px;
+}
+
+  .section h2,
+  .info-card h2{
+    font-size:32px;
+  }
+
+  .whatsapp-float{
+    width:62px;
+    height:62px;
+  }
+}
+.logo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:18px;
+}
+
+.status.available{
+  color:#22ff66;
+}
+
+.status.soldout{
+  color:#ff4d4d;
+}
+
+.product.agotado{
+  opacity:.65;
+  filter:grayscale(.4);
+}
+
+
+
+.buy.disabled{
+  background:#555!important;
+  color:#ddd!important;
+  cursor:not-allowed;
+  box-shadow:none!important;
+}
+
+.product ul{
+  padding-left:0;
+  list-style:none;
+}
+
+.product li::before{
+  content:"✓";
+  color:#ffcc00;
+  font-weight:1000;
+  margin-right:8px;
+}
+.info-card.faq-style,
+.faq article{
+  background: var(--card2);
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:34px;
+  box-shadow:0 18px 45px rgba(0,0,0,.35);
+}
+
+
+
+.info-card.faq-style p,
+.info-card.faq-style .steps div{
+  font-size:17px;
+  line-height:1.5;
+  color:#e8eef7;
+}
+
+.info-card.faq-style .steps div span{
+  background:#ffcc00;
+  color:#111;
+  font-weight:900;
+  width:32px;
+  height:32px;
+  display:inline-grid;
+  place-items:center;
+  border-radius:50%;
+  margin-right:12px;
+}
+
+.info-card .section-title{
+  font-size:clamp(34px,3.2vw,48px);
+  line-height:1.05;
+  margin-bottom:30px;
+}
+
+
+
+.info-card .section-title::after{
+  width:80px;
+  height:4px;
+  margin-top:12px;
+}
+
+.info-card{
+  overflow:hidden;
+}
+
+.steps div{
+  min-height:64px;
+  font-size:18px;
+  padding:18px 22px;
+}
+
+.line{
+  font-size:18px;
+  padding:22px;
+}
+
+.info-card .section-title,
+.faq .section-title{
+  color:#fff !important;
+  font-size:clamp(34px,3.2vw,48px);
+  line-height:1.05;
+  margin-bottom:30px;
+}
+
+.info-card .section-title span,
+.faq .section-title span{
+  color:#ffcc00 !important;
+  text-shadow:
+    0 0 10px rgba(255,204,0,.7),
+    0 0 25px rgba(255,204,0,.35);
+}
+
+/* TARJETA HORARIO */
+.schedule-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,204,0,.18);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.schedule-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(255,204,0,.3), 0 0 35px rgba(255,204,0,.15);
+  border-color: #ffcc00;
+}
+
+.schedule-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba(255,204,0,.15);
+  font-size: 26px;
+}
+
+.schedule-item span {
+  display: block;
+  color: #cbd5e1;
+  font-size: 16px;
+}
+
+.schedule-item strong {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative; /* importante para que ::after quede relativo */
+  margin-bottom: 35px;
+}
+
+
+.title-icon {
+  font-size: 56px;
+  line-height: 1;
+  filter: drop-shadow(0 0 15px rgba(255,204,0,.45));
+  position: relative;
+}
+
+ 
+/* Contenedor del Título (Alinea el reloj y el texto en la misma línea) */
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  margin-bottom: 35px; /* Espacio para que no choque con el contenido */
+}
+
+/* El emoji o icono del título */
+.title-icon {
+  font-size: 38px;
+  line-height: 1;
+}
+
+/* Estilo del texto del título sin interferencias */
+.section-title-clean {
+  margin: 0;
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.section-title-clean span {
+  color: #ffcc00;
+  text-shadow: 0 0 10px rgba(255,204,0,0.45);
+}
+
+/* La rayita dorada debajo del Icono (Corona/Reloj) */
+.title-row::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 50px; /* Tamaño ideal debajo del icono */
+  background: #ffcc00;
+  border-radius: 999px;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+  bottom: -12px; /* Espaciado hacia abajo */
+  left: 0;
+}
+
+/* Ajustes para las filas del Horario (Copia el estilo de los pasos) */
+.schedule-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 18px 22px;
+  transition: .3s;
+}
+
+.schedule-row:hover {
+  transform: translateX(8px);
+  border-color: rgba(255,204,0,0.35);
+  box-shadow: 0 0 18px rgba(255,204,0,0.12);
+}
+
+/* El círculo amarillo con el número */
+.schedule-row > span {
+  background: #ffcc00;
+  color: #111;
+  font-weight: 900;
+  width: 32px;
+  height: 32px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  flex-shrink: 0; /* Evita que el círculo se deforme */
+}
+
+/* Textos internos del horario */
+.schedule-day {
+  margin: 0;
+  font-size: 15px;
+  color: #b8c5d6;
+}
+
+.schedule-time {
+  display: block;
+  font-size: 19px;
+  color: #fff;
+  margin-top: 2px;
+}
+
+/* Cabecera de la tarjeta: Reloj y texto juntos */
+.clean-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  margin-bottom: 40px; /* Espacio para que la línea respire */
+  width: 100%;
+}
+
+.clean-icon {
+  font-size: 38px;
+  line-height: 1;
+}
+
+.card-title-clean {
+ display: flex;           /* Para alinear icono y texto */
+  align-items: center;     /* Centrar verticalmente */
+  gap: 8px;                /* Separación entre icono y texto */
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  position: relative;
+}
+
+.card-title-clean span {
+   color:#ffcc00; /* Dorado */
+  text-shadow:
+    0 0 10px rgba(255,204,0,.7),
+    0 0 25px rgba(255,204,0,.35);
+}
+
+.card-title-clean i,
+.card-title-clean .icon-img {
+  font-size: 2.5rem;
+}
+/* La rayita dorada fija debajo del reloj */
+.clean-header::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 55px;
+  background: #ffcc00;
+  border-radius: 999px;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+  bottom: -15px;
+  left: 0;
+}
+
+/* Las filas de los horarios (Ocupando todo el ancho) */
+.clean-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 18px 22px;
+  width: 100%; /* Obliga a la tarjeta a usar todo el espacio */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clean-row:hover {
+  transform: translateX(8px);
+  border-color: rgba(255, 204, 0, 0.35);
+  box-shadow: 0 0 18px rgba(255, 204, 0, 0.12);
+}
+
+/* El círculo con el número */
+.clean-num {
+  background: linear-gradient(135deg, #ffcc00, #ffd633);
+  color: #111;
+  font-weight: 900;
+  width: 32px;
+  height: 32px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  flex-shrink: 0; /* Evita que el círculo se aplaste */
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+}
+
+/* Bloque de textos internos */
+.clean-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.clean-text p {
+  margin: 0;
+  font-size: 15px;
+  color: #b8c5d6;
+}
+
+.clean-text strong {
+  font-size: 19px;
+  color: #fff;
+  font-weight: 800;
+}
+
+/* Cabecera limpia con Flexbox para evitar que se amontone */
+.info-card .clean-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  position: relative !important;
+  margin-bottom: 40px !important;
+  width: 100% !important;
+}
+
+.clean-icon {
+  font-size: 38px;
+  line-height: 1;
+}
+
+.info-card .card-title-clean {
+  margin: 0 !important;
+  display: block !important;
+  font-size: clamp(24px, 3vw, 36px) !important;
+  font-weight: 900 !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  letter-spacing: -0.5px !important;
+}
+
+.info-card .card-title-clean span {
+  color: #ffcc00 !important;
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.45) !important;
+}
+
+/* La rayita dorada fija debajo del reloj */
+.info-card .clean-header::after {
+  content: "" !important;
+  position: absolute !important;
+  height: 5px !important;
+  width: 55px !important;
+  background: #ffcc00 !important;
+  border-radius: 999px !important;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.7) !important;
+  bottom: -15px !important;
+  left: 0 !important;
+}
+
+/* Filas de horarios ocupando el 100% de la tarjeta */
+.info-card .clean-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  background: rgba(255, 255, 255, 0.035) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 18px !important;
+  padding: 18px 22px !important;
+  width: 100% !important; /* Estira la caja interna */
+  box-sizing: border-box !important;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card .clean-row:hover {
+  transform: translateX(8px) !important;
+  border-color: rgba(255, 204, 0, 0.35) !important;
+  box-shadow: 0 0 18px rgba(255, 204, 0, 0.12) !important;
+}
+
+.clean-num {
+  background: linear-gradient(135deg, #ffcc00, #ffd633);
+  color: #111;
+  font-weight: 900;
+  width: 32px;
+  height: 32px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+}
+
+.clean-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.clean-text p {
+  margin: 0 !important;
+  font-size: 15px !important;
+  color: #b8c5d6 !important;
+}
+
+.clean-text strong {
+  font-size: 19px !important;
+  color: #fff !important;
+  font-weight: 800 !important;
+}
+
+/* 1. Potenciamos el dorado con más brillo para que resalte igual que el de la izquierda */
+.info-card .card-title-clean span {
+  color: #ffcc00 !important;
+  text-shadow: 
+    0 0 10px rgba(255, 204, 0, 0.8), 
+    0 0 20px rgba(255, 204, 0, 0.45) !important;
+}
+
+/* 2. Forzamos a que las cajas de los horarios se estiren al 100% de la tarjeta */
+.info-card .clean-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  background: rgba(255, 255, 255, 0.035) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 18px !important;
+  padding: 18px 22px !important;
+  
+  /* ESTO ES LO CRÍTICO: Eliminamos cualquier ancho viejo y forzamos el total */
+  width: auto !important; 
+  max-width: none !important;
+  flex: 1 1 100% !important;
+  
+  box-sizing: border-box !important;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 3. Aseguramos que el contenedor de los pasos mantenga las cajas estiradas */
+.info-card .steps {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 16px !important;
+}
+/* Forzamos que ambas cabeceras limpien cualquier margen superior */
+.info-card .clean-header {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Aplicamos la misma rayita dorada para cualquier icono dentro de la cabecera limpia */
+.info-card .clean-header::after {
+  content: "" !important;
+  position: absolute !important;
+  height: 5px !important;
+  width: 55px !important;
+  background: #ffcc00 !important;
+  border-radius: 999px !important;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.7) !important;
+  bottom: -15px !important;
+  left: 0 !important;
+}
+
+/* Cabecera general de la sección (Alinea Corona y Texto) */
+.main-header {
+  display: flex !important;
+  align-items: baseline !important; /* Alinea perfectamente las bases del emoji y el texto */
+  gap: 14px !important;
+  position: relative !important;
+  margin-bottom: 30px !important; /* Espacio prudente para que la línea respire */
+  width: 100% !important;
+}
+
+/* El emoji de la corona */
+.main-icon {
+  font-size: 38px;
+  line-height: 1;
+  display: inline-block;
+}
+/* El título principal limpio y sin herencias extrañas */
+.main-title-clean {
+  margin: 0 !important;
+  display: inline-block !important;
+  font-size: clamp(32px, 4vw, 46px) !important;
+  font-weight: 1000 !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  letter-spacing: -1px !important;
+  line-height: 1 !important;
+  transform: translateY(2px); /* Ajuste milimétrico para que rime con el centro de la corona */
+}
+
+/* Potenciamos el brillo dorado para que resalte al máximo */
+.main-title-clean span {
+  color: #ffcc00 !important;
+  text-shadow: 
+    0 0 12px rgba(255, 204, 0, 0.8), 
+    0 0 24px rgba(255, 204, 0, 0.45) !important;
+}
+
+/* La rayita dorada fija perfectamente debajo de la corona */
+.main-header::after {
+  content: "" !important;
+  position: absolute !important;
+  height: 5px !important;
+  width: 55px !important; /* Ancho ideal que solo cubre el espacio de la corona */
+  background: #ffcc00 !important;
+  border-radius: 999px !important;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.7) !important;
+  bottom: -12px !important; /* Separación justa hacia abajo */
+  left: 0 !important;
+}
+/* ==========================================================================
+   SECCIÓN PREGUNTAS FRECUENTES (ADAPTADO A TU INDEX ACTUAL)
+   ========================================================================== */
+
+/* Contenedor principal de la sección (La caja grande) */
+.section.faq {
+  background: var(--card) !important;
+  border-radius: 24px !important;
+  padding: 40px !important;
+  margin-bottom: 60px !important;
+
+  /* AQUÍ EL CAMBIO: Mismo borde y resplandor de los productos */
+  border: 1px solid rgba(255, 204, 0, 0.35) !important;
+  overflow: visible !important; 
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.5),                  /* Profundidad oscura */
+    0 0 35px rgba(255, 204, 0, 0.15) !important;     /* Atmósfera dorada constante */
+}
+
+.section.faq:hover {
+  transform: translateY(-8px) !important;
+  border-color: #ffcc00 !important;
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(255, 204, 0, 0.35),                /* Brillo intenso */
+    0 0 50px rgba(255, 204, 0, 0.15) !important;     /* Expansión de luz */
+}
+
+/* El contenedor Grid para las 3 columnas */
+.faq-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
+}
+
+/* Estilo para cada tarjeta (<article>) */
+.faq-grid article {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.005)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 18px !important;
+  padding: 32px 28px !important;
+  min-height: 180px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.4s ease, 
+              box-shadow 0.4s ease !important;
+}
+
+/* Efecto hover: se eleva y brilla el borde en dorado */
+.faq-grid article:hover {
+  transform: translateY(-8px) !important;
+  border-color: rgba(255, 204, 0, 0.4) !important;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(255, 204, 0, 0.15) !important;
+  background: linear-gradient(135deg, rgba(255, 204, 0, 0.04), rgba(0, 0, 0, 0)) !important;
+}
+
+/* Los títulos de las preguntas (<h3>) */
+.faq-grid article h3 {
+  margin: 0 0 16px 0 !important;
+  font-size: 30px !important;       /* Tamaño ideal para que el texto fluya sin romperse toscamente */
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  line-height: 1.3 !important;
+  position: relative !important;
+  padding-left: 20px !important;    /* Espacio para el marcador izquierdo */
+  display: flex !important;
+  align-items: flex-start !important;
+}
+/* El marcador dorado estilizado a la izquierda del h3 */
+.faq-grid article h3::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 6px !important;              /* Lo nivela perfectamente con la primera línea de texto */
+  width: 6px !important;
+  height: 18px !important;          /* Una barrita vertical elegante */
+  background: #ffcc00 !important;
+  border-radius: 99px !important;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.6) !important; /* Pequeño destello neón */
+}
+
+/* Los párrafos de las respuestas (<p>) */
+.faq-grid article p {
+  margin: 0 !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;      /* Un poco más de cuerpo al texto */
+  color: #a4b3c6 !important;        /* Color gris azulado premium muy limpio */
+  line-height: 1.6 !important;
+  padding-left: 20px !important;    /* Alineación perfecta con el título de arriba */
+}
+
+/* RESPONSIVE: Se adapta automáticamente a 1 sola columna en celulares */
+@media(max-width: 992px) {
+  .faq-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .section.faq {
+    padding: 24px !important;
+  }
+}
