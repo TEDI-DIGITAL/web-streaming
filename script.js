@@ -2,7 +2,7 @@ const WHATSAPP = "51933429883";
 
 const productos = [
   {
-    nombre: "Netflix Premium",
+    nombre: "Netflix Premium - TV",
     precio: "S/14.99 mensual",
     categoria: ["Streaming"],
     logo: "N",
@@ -15,7 +15,7 @@ const productos = [
   
   },
   {
-    nombre: "Netflix Premium",
+    nombre: "Netflix Premium - MÓVIL",
     precio: "S/16.99 mensual",
     categoria: ["Streaming"],
     logo: "N",
@@ -29,7 +29,7 @@ const productos = [
   },
 
   {
-    nombre: "Netflix Premium",
+    nombre: "Netflix Premium- PC",
     precio: "S/15.99 mensual",
     categoria: ["Streaming"],
     logo: "N",
@@ -44,7 +44,7 @@ const productos = [
 
   {
     nombre: "Disney+ Premium",
-    precio: "S/9.99 mensual",
+    precio: "S/11.99 mensual",
     categoria: ["Streaming"],
     logo: "D+",
     img:"https://store-images.s-microsoft.com/image/apps.14187.14495311847124170.7646206e-bd82-4cf0-8b8c-d06a67bc302c.2e474878-acb7-4afb-a503-c2a1a32feaa8",
@@ -92,7 +92,7 @@ const productos = [
   },
   {
     nombre: "Paramount+ PREMIUM",
-    precio: "S/16.99 mensual",
+    precio: "S/17.99 mensual",
     categoria: ["Streaming", "Mundial 2026"],
     logo: "P+",
     img: "https://static.vecteezy.com/system/resources/thumbnails/056/658/340/small_2x/paramount-logo-square-rounded-paramount-logo-paramount-logo-free-download-free-png.png",
@@ -132,7 +132,18 @@ const productos = [
     logo: "AI",
     img:"https://framerusercontent.com/images/LG6s4Z4XkHXw5FjGTIJZ9EEm7g.png?width=512&height=512",
     desc: "Herramienta útil para estudio, trabajo y productividad.",
-    bullets: ["1 dispositivo (TV, MÓVIL O PC)", "Acceso inmediato", "Uso personal"],
+    bullets: ["1 dispositivo (TV, MÓVIL O PC)", "Acceso inmediato", "Uso Compartido"],
+    accent: "#123c36",
+    disponible: true
+  },
+   {
+    nombre: "GEMINI PRO - PERSONAL",
+    precio: "S/19.99 mensual",
+    categoria: ["Herramientas"],
+    logo: "AI",
+    img:"https://framerusercontent.com/images/LG6s4Z4XkHXw5FjGTIJZ9EEm7g.png?width=512&height=512",
+    desc: "Herramienta útil para estudio, trabajo y productividad.",
+    bullets: ["1 dispositivo (TV, MÓVIL O PC)", "Acceso inmediato", "Uso Personal"],
     accent: "#123c36",
     disponible: true
   },
@@ -151,7 +162,7 @@ const productos = [
 
   {
     nombre: "DGO PREMIUM",
-    precio: "S/24.99 mensual",
+    precio: "S/34.99 mensual",
     categoria: ["Mundial 2026"],
     logo: "TV",
     img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4BifFxFZyifzGaD9wWLQlXb-q1-bdRUVkQ&s",
