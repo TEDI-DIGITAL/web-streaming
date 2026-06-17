@@ -92,7 +92,7 @@ const productos = [
   },
   {
     nombre: "Paramount+ PREMIUM",
-    precio: "S/14.99 mensual",
+    precio: "S/17.99 mensual",
     categoria: ["Streaming", "Mundial 2026"],
     logo: "P+",
     img: "https://static.vecteezy.com/system/resources/thumbnails/056/658/340/small_2x/paramount-logo-square-rounded-paramount-logo-paramount-logo-free-download-free-png.png",
