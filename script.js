@@ -8,7 +8,7 @@ const productos = [
     logo: "N",
     img: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png", 
     desc: "Películas y series populares para disfrutar todos los días. Resolución 4K Ultra HD",
-    bullets: ["1 dispositivo TV", "Activación inmediata", "Soporte y garantía"],
+    bullets: ["1 dispositivo TV", "Activación inmediata"],
     accent: "#3b1423",
     tag: "Más vendido",
     disponible: true
@@ -21,7 +21,7 @@ const productos = [
     logo: "N",
     img: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png", 
     desc: "Películas y series populares para disfrutar todos los días. Resolución 4K Ultra HD",
-    bullets: ["1 dispositivo MÓVIL", "Activación inmediata", "Soporte y garantía"],
+    bullets: ["1 dispositivo MÓVIL", "Activación inmediata"],
     accent: "#3b1423",
     
     disponible: true
@@ -35,7 +35,7 @@ const productos = [
     logo: "N",
     img: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png", 
     desc: "Películas y series populares para disfrutar todos los días.  Resolución 4K Ultra HD",
-    bullets: ["1 dispositivo PC O LAPTOP", "Activación inmediata", "Soporte y garantía"],
+    bullets: ["1 dispositivo PC O LAPTOP", "Activación inmediata"],
     accent: "#3b1423",
     
     disponible: true
